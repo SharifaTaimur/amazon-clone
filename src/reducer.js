@@ -17,11 +17,11 @@ const reducer = (state, action) => {
         basket: [...state.basket, action.item],
       };
 
-    // case "EMPTY_BASKET":
-    //   return {
-    //     ...state,
-    //     basket: [],
-    //   };
+    case "EMPTY_BASKET":
+      return {
+        ...state,
+        basket: [],
+      };
 
     case "REMOVE_FROM_BASKET":
       // finds the index of the first item with the matching action id and deleted -(can also use filter
